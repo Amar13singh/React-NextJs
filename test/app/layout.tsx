@@ -1,4 +1,9 @@
 import type { Metadata } from "next";
+import Navbar from "./navbar/Navbar";
+import Sidebar from "./navbar/Sidebar";
+import VSCodeSidebar from "./navbar/VscodeSideBar";
+
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -27,7 +32,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {/* <Sidebar/> */}
+        <div className="flex">
+          <VSCodeSidebar />
+
+          <main className="flex-1">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
