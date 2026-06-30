@@ -7,8 +7,20 @@ export default function Home() {
   return (
     <>
       {/* <Practice/> */}
+      {/* trying for sidebar */}
+      
+      <div className="mt-30 items-center ml-1 flex-col flex-left">
+        <div className="border  rounded-xl p-5 mr-290 flex-col items-center justify-evenly">
+              <div className="p-4 ">A</div>
+              <div className="p-4 ">B</div>
+              <div className="p-4 ">B</div>
+              <div className="p-4 ">B</div>
+              <div className="p-4 ">B</div>
+              <div className="p-4 ">B</div>
+        </div>
+      </div>
   
-    <main className="bg-black text-white min-h-screen mt-30">
+    <main className="bg-black text-white min-h-screen mt-30 ml-10">
       <p className="m-12 text-blue-500 font-bold">
         Hi, this is Next.js
       </p>
